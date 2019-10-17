@@ -75,7 +75,7 @@ var orm = {
     // ObtColVals would be the colums and values that you want to update
     // An example of objColVals would be {name: panther, sleepy: true}
     // The condition is what burger we're updating/devouring
-    updateOne: function(table, objColVals, condition, cb) {
+    update: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
       queryString += " SET ";
