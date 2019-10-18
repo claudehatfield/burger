@@ -1,10 +1,6 @@
-var connection;
- //If deploying to Heroku, make sure you set up the JAWSDB add-on.
- if (process.env.JAWSDB_URL) {
-     var connection = require("../config/live-connection.js");
- } else {
-     var connection = require("../config/connection.js");
- }
+
+     var connection = require("./connection");
+
 
  // Object for all our SQL statement functions.
  var orm = {
